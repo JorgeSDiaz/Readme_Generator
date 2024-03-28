@@ -22,10 +22,11 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@/*": ["./src/app/*"],
-      "@gallery/*": ["./src/app/gallery/*"],
-      "@landing/*": ["./src/app/landing/*"],
-      "@readme-editor/*": ["./src/app/readme-editor/*"],
-      "@shared/*": ["./src/app/shared/*"]
+      "@gallery/*": ["./src/app/domains/gallery/*"],
+      "@landing/*": ["./src/app/domains/landing/*"],
+      "@readme-editor/*": ["./src/app/domains/readme-editor/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@shared/*": ["./src/app/domains/shared/*"]
     }
   },
   "angularCompilerOptions": {
