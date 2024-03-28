@@ -7,13 +7,17 @@ nav {
     padding-inline: 1rem;
 }
 
-img {
+h1 > a > img {
     margin-right: 0.5rem;
+}
+
+img {
+    margin-right: 0.2rem;
 }
 
 ul {
     display: inherit;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 li {
@@ -21,7 +25,9 @@ li {
 }
 
 a {
+    color: black;
     text-decoration: none;
+    align-items: center;
 }
 
 a:hover {

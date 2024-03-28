@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
+import { NavOption } from '../../models/nav-option.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'NavBarComponent',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavBarComponent {
-  options: String[] = ['Home', 'Generate', 'Gallery']
-  logoSrc: String = '@assets/logo.svg';
+  options: NavOption[] = [
+    { name: 'Home', route: '/', icon: 'assets/home.svg' },
+    { name: 'Generate', route: '/generate', icon: 'assets/edit.svg' },
+    { name: 'Gallery', route: '/gallery', icon: 'assets/gallery.svg' },
+  ];
 }

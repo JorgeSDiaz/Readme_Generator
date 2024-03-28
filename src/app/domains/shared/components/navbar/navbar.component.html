@@ -8,7 +8,14 @@
     <ul>
         @for (option of options; track options) {
             <li>
-                <a>{{ option }}</a>
+                <a [routerLink]="option.route">
+                    @if (option.icon) {
+                        <img [src]="option.icon" [alt]="option.name">
+                    }
+                    <span>
+                        {{ option.name }}
+                    </span>
+                </a>
             </li>
         }
     </ul>
