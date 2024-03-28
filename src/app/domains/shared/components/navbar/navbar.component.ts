@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'HeaderComponent',
+  selector: 'NavBarComponent',
   standalone: true,
   imports: [],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class HeaderComponent {
+export class NavBarComponent {
   options: String[] = ['Home', 'Generate', 'Gallery']
   logoSrc: String = '@assets/logo.svg';
 }
