@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
-import { LayoutComponent } from './domains/shared/components/layout/layout.component';
-import { LandingComponent } from './domains/landing/pages/landing/landing.component';
-import { ReadmeEditorComponent } from './domains/readme-editor/pages/readme-editor/readme-editor.component';
-import { GalleryComponent } from './domains/gallery/pages/gallery/gallery.component';
+import LayoutComponent from '@shared/components/layout/layout.component';
+import LandingComponent from './domains/landing/pages/landing/landing.component';
 
 export const routes: Routes = [
   {
@@ -11,15 +9,15 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: LandingComponent,
+        loadComponent: () => import('@landing/pages/landing/landing.component')
       },
       {
         path: 'generate',
-        component: ReadmeEditorComponent,
+        loadComponent: () => import('@readmeEditor/pages/readme-editor/readme-editor.component')
       },
       {
         path: 'gallery',
-        component: GalleryComponent,
+        loadComponent: () => import('@gallery/pages/gallery/gallery.component')
       },
     ],
   },

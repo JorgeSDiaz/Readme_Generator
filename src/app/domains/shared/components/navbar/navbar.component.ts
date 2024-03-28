@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavBarComponent {
+export default class NavBarComponent {
   options: NavOption[] = [
     { name: 'Home', route: '/', icon: 'assets/home.svg' },
     { name: 'Generate', route: '/generate', icon: 'assets/edit.svg' },

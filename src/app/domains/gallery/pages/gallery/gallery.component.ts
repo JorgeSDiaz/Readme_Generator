@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.css'
 })
-export class GalleryComponent {
+export default class GalleryComponent {
 
 }

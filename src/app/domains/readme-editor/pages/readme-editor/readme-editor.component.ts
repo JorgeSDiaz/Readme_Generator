@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './readme-editor.component.html',
   styleUrl: './readme-editor.component.css'
 })
-export class ReadmeEditorComponent {
+export default class ReadmeEditorComponent {
 
 }

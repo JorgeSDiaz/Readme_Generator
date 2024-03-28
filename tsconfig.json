@@ -24,7 +24,7 @@
       "@/*": ["./src/app/*"],
       "@gallery/*": ["./src/app/domains/gallery/*"],
       "@landing/*": ["./src/app/domains/landing/*"],
-      "@readme-editor/*": ["./src/app/domains/readme-editor/*"],
+      "@readmeEditor/*": ["./src/app/domains/readme-editor/*"],
       "@assets/*": ["./src/assets/*"],
       "@shared/*": ["./src/app/domains/shared/*"]
     }
