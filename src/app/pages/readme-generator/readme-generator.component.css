@@ -3,8 +3,6 @@
     grid-template-columns: 0.9fr 1fr;
     grid-gap: 20px;
     height: 97vh;
-}
-
-.to-do {
-    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    gap: 2rem;
 }

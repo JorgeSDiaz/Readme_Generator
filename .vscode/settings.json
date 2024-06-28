@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Project",
-        "Editor"
+        "Editor",
+        "Preview"
     ]
 }
