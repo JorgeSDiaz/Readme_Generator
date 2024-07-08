@@ -1,4 +1,57 @@
+<div class="bar">
+  <div>
+    <p-sidebar [(visible)]="sidebarVisible">
+      <ng-template pTemplate="header">
+        <h1>Readme Generator</h1>
+      </ng-template>
+      <ng-template pTemplate="content">
+        <ul>
+          <li>
+            <a>Section 1</a>
+          </li>
+          <li>
+            <a>Section 2</a>
+          </li>
+        </ul>
+        <p-divider align="left" type="solid">
+          <b>Available</b>
+        </p-divider>
+        <ul>
+          <li>
+            <a>Section 3</a>
+          </li>
+          <li>
+            <a>Section 4</a>
+          </li>
+          <li>
+            <a>Section 5</a>
+          </li>
+          <li>
+            <a>Section 6</a>
+          </li>
+          <li>
+            <a>Section 7</a>
+          </li>
+        </ul>
+      </ng-template>
+    </p-sidebar>
+    <p-button
+      size="small"
+      (click)="sidebarVisible = true"
+      icon="pi pi-bars"
+      class="p-butt"
+    />
+  </div>
+  <div class="tools">
+    <p-buttonGroup>
+      <p-button label="New" icon="pi pi-file-plus" size="small" />
+      <p-button label="Import" icon="pi pi-file-import" size="small" />
+      <p-button label="Export" icon="pi pi-file-export" size="small" />
+    </p-buttonGroup>
+    <p-button label="Copy" icon="pi pi-copy" size="small"/>
+  </div>
+</div>
 <div class="work-area">
-    <Editor />
-    <Preview />
+  <Editor />
+  <Preview />
 </div>
